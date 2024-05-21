@@ -148,12 +148,12 @@
 
 window.addEventListener('DOMContentLoaded', () => {
   document
-    .querySelectorAll('a, .to-link, .comment__img, .search-button')
+  .querySelectorAll('a, .to-link, .comment__img, .comments, .search-button')
     .forEach((el) => {
       el.addEventListener('click', function (e) {
         e.preventDefault();
 
-        const targetElement = document.querySelector('#form');
+        const targetElement = document.querySelector('#comment-component-text');
         console.log(targetElement);
         if (targetElement) {
           targetElement.scrollIntoView({ behavior: 'smooth' });
